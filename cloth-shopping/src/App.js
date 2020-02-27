@@ -12,6 +12,8 @@ import SigInAndSignUpPage from "./pages/sing-in-and-sign-up/sing-in-and-sign-up.
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.action";
 import { selectCurrentUser } from "./redux/user/user.selector";
+// import { selectCollectionsForPreview } from './redux/shop/shop.selector';
+
 import "firebase/firestore";
 class App extends React.Component {
   constructor(props) {
@@ -38,7 +40,7 @@ class App extends React.Component {
       }
 
       setCurrentUser(userAuth);
-
+      // addCollectionAndItems('collections',collectionsArray.map(({title,items})=>({title,items})))
       // console.log(user)
     });
   }
