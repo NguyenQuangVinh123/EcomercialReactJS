@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../assets/4.4 crown.svg.svg";
-import "./header.styles.scss";
+// import "./header.styles.scss";
 import { connect } from "react-redux";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropDown from "../cart-dropdown/cart-dropdown.component";
