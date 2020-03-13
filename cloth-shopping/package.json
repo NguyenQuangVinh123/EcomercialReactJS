@@ -4,16 +4,8 @@
   "main": "index.js",
   "author": "VinhNguyen <vinh1593570@gmail.com>",
   "license": "MIT",
-  
-  "engines": {
-    "node" : "10.15.3",
-    "yarn" : "1.17.3"
-  },
+ 
   "scripts": {
-    "client" : "cd client && yarn start",
-    "build"  : "cd client && npm run build",
-    "dev" : "concurrently --kill-others-on-fail \"yarn server\"",
-    "start": "node server/server.js",
     "server": "nodemon server/server.js"
 
   },
