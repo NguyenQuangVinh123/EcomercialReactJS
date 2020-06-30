@@ -3,9 +3,7 @@ import {connect} from 'react-redux'
 import './sign-in-styles.scss'
 import FormInput from '../form-input/form-input.component'
 import CustomButton from '../custom-button/custom-button.component'
- import { googleSignInStart ,emailSignInStart} from '../../redux/user/user.action'
-
-
+import { googleSignInStart ,emailSignInStart} from '../../redux/user/user.action'
 // import {auth} from 'firebase'
 const SignIn = ({emailSignInStart ,googleSignInStart}) => {
     const [userCredentials, setCredentials] = useState({email: '',password: ''})

@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
- 
+const middelwares = require('./middelwares.js')
 if(process.env.NODE_ENV !== 'production') require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SEVRE_KEY);
 
@@ -12,6 +12,8 @@ const port  = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}))
 app.use(cors());
+app.use(middelwares.notFound);
+app.use(middelwares.errorHandeler);
 
 
 

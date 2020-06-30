@@ -13,8 +13,6 @@ const SigInAndSignUpPage = lazy(() => import('./pages/sing-in-and-sign-up/sing-i
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'))
 
 const App = ({checkUserSession,currentUser}) => {
-
-
  useEffect(()=>{
   checkUserSession()
  },[checkUserSession])
